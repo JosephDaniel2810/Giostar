@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  /* ——— Light Base + High‑Contrast Accents ——— */
+  --background: #ffffff;             /* Pure white page background */
+  --foreground: #111111;             /* Very dark gray for text */
+
+  /* Accent colors */
+  --primary-green: #2f855a;          /* Darker green for headings/buttons */
+  --primary-teal:  #319795;          /* Deep teal replacing “gold” */
+
+  /* Card/Panel backgrounds */
+  --card-bg: #f3f4f6;                /* Very light gray for cards/panels */
+  --card-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08); /* Subtle shadow */
+
+  --border-radius: 1.5rem;           /* 24px rounded corners */
+
+  /* ——— Animation Durations ——— */
+  --anim-fast:   0.2s;
+  --anim-medium: 0.5s;
+  --anim-slow:   1s;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark‑mode fallback */
+    --background: #1a202c;
+    --foreground: #e2e8f0;
+
+    /* Brighter accents on dark background */
+    --primary-green: #48bb78;
+    --primary-teal:  #4fd1c5;
+
+    --card-bg: #2d3748;
+    --card-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Custom utility classes */
+.card-shadow {
+  box-shadow: var(--card-shadow);
+}
+.card-radius {
+  border-radius: var(--border-radius);
+}
+.smooth-transition {
+  transition: all var(--anim-medium) ease-in-out;
+}
+
+.bg-primary-green {
+  background-color: var(--primary-green);
+}
+.bg-primary-teal {
+  background-color: var(--primary-teal);
+}
+.bg-card-bg {
+  background-color: var(--card-bg);
+}
+
+.text-primary-green {
+  color: var(--primary-green);
+}
+.text-primary-teal {
+  color: var(--primary-teal);
+}
+
+/* Link underline hover (clearly visible) */
+a:hover {
+  text-decoration: underline;
+  color: var(--primary-teal);
+}
+
+/* If you want to fade in anything slowly: */
+@keyframes fadeInSlow {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
