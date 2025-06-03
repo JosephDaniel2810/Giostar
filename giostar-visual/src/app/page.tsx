@@ -1,4 +1,4 @@
-// app/page.tsx  (or wherever your “Home” component lives)
+// app/page.tsx  (or wherever your "Home" component lives)
 
 "use client";
 
@@ -13,7 +13,7 @@ import Link from "next/link";
 interface CountUpProps {
   end: number;
   duration?: number; // in seconds
-  suffix?: string;   // e.g. "+" if you want “20000+”
+  suffix?: string;   // e.g. "+" if you want "20000+"
 }
 function CountUp({ end, duration = 2, suffix = "" }: CountUpProps) {
   const [count, setCount] = useState(0);
@@ -219,9 +219,9 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center mt-8">
-          <button className="bg-green-500 text-white px-6 py-2 rounded-full font-medium hover:bg-teal-500 transition-shadow shadow-md">
+          <a href="/therapy" className="bg-green-500 text-white px-6 py-2 rounded-full font-medium hover:bg-teal-500 transition-shadow shadow-md">
             More Services
-          </button>
+          </a>
         </div>
       </section>
 
@@ -248,7 +248,7 @@ export default function Home() {
             pioneers of regenerative therapies.
           </p>
           <button className="bg-green-500 text-white px-6 py-2 rounded-full font-medium hover:bg-teal-500 transition-shadow shadow-md">
-            Learn More
+            <a href="/about">Learn More</a>
           </button>
         </div>
         <div className="flex-1 flex flex-col items-center">

@@ -24,7 +24,7 @@ import {
 interface CountUpProps {
   end: number;
   duration?: number; // in seconds
-  suffix?: string;   // e.g. "+" if you want “20000+”
+  suffix?: string;   // e.g. "+" if you want "20000+"
 }
 function CountUp({ end, duration = 2, suffix = "" }: CountUpProps) {
   const [count, setCount] = useState(0);
@@ -67,7 +67,7 @@ export default function AhmedabadHospitalPage() {
   const phoneNumber = "+91-7043008890";
   const email = "contact@giostar.com";
 
-  // “What We Offer” cards data
+  // "What We Offer" cards data
   const services = [
     {
       title: "Diabetes (Type 1)",
@@ -92,7 +92,7 @@ export default function AhmedabadHospitalPage() {
     },
   ];
 
-  // “What They Say” testimonials
+  // "What They Say" testimonials
   const testimonials = [
     {
       name: "PRATICK",
@@ -121,7 +121,7 @@ export default function AhmedabadHospitalPage() {
     {
       question: "What is cancer cellular immunotherapy?",
       answer:
-        "Immunosurveillance is the name of process for immune system mediated elimination of tumor cells when needed. However, under progressive tumor conditions immunosuppressive factors are released which hamper the immune system of body to fight cancer. Our cancer cellular immunotherapy treatment works by infusion of activated immune cells, developed under lab conditions, into the cancer patient. In this therapy, patient’s own immune cells are collected from blood and go thorough our specialized process in the lab under sterile conditions and infused back into the patients. It is personalized and specifically generated against the patient’s tumor-specific antigens.",
+        "Immunosurveillance is the name of process for immune system mediated elimination of tumor cells when needed. However, under progressive tumor conditions immunosuppressive factors are released which hamper the immune system of body to fight cancer. Our cancer cellular immunotherapy treatment works by infusion of activated immune cells, developed under lab conditions, into the cancer patient. In this therapy, patient's own immune cells are collected from blood and go thorough our specialized process in the lab under sterile conditions and infused back into the patients. It is personalized and specifically generated against the patient's tumor-specific antigens.",
     },
     {
       question: "What are the effects and side effects (toxicities) of cancer cellular immunotherapy?",
@@ -269,7 +269,7 @@ export default function AhmedabadHospitalPage() {
               treatment at an affordable cost when compared to all others in world.
             </p>
             <button className="bg-primary-green text-white px-6 py-2 rounded-full hover:bg-primary-green/90 transition">
-              Book Now
+              <a href="/contact">Book Now</a>
             </button>
           </motion.div>
 
@@ -359,14 +359,14 @@ export default function AhmedabadHospitalPage() {
               transition={{ duration: 0.7, ease: "easeOut" }}
               className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-800 transition"
             >
-              More Services
+              <a href="/therapy">More Services</a>
             </motion.button>
           </div>
         </div>
       </section>
 
       {/* ============================================================== */}
-      {/*  “Giostar Hospital Ahmedabad” + Feature Cards (updated)      */}
+      {/*  "Giostar Hospital Ahmedabad" + Feature Cards (updated)      */}
       {/* ============================================================== */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
@@ -397,7 +397,7 @@ export default function AhmedabadHospitalPage() {
               and so on for more degenerative diseases.
             </p>
             <button className="bg-primary-green text-white px-6 py-3 rounded-full hover:bg-primary-green/90 transition">
-              Discover More
+              <a href="/contact">Discover More</a>
             </button>
           </motion.div>
 

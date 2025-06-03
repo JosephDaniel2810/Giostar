@@ -46,7 +46,7 @@ export default function RootLayout({
           <nav className="flex gap-6 mt-2 sm:mt-0 text-[var(--foreground)] font-medium">
             <Link href="/" className="hover:text-primary-teal smooth-transition">Home</Link>
             <Link href="/about" className="hover:text-primary-teal smooth-transition">About Us</Link>
-            <a href="#therapy" className="hover:text-primary-teal smooth-transition">Therapy</a>
+            <Link href="/therapy" className="hover:text-primary-teal smooth-transition">Therapy</Link>
             <Link href="/ahmedabad-centre" className="hover:text-primary-teal smooth-transition">Ahmedabad Centre</Link>
             <Link href="/bangalore-centre" className="hover:text-primary-teal smooth-transition">Bangalore Centre</Link>
             <Link href="/contact" className="hover:text-primary-teal smooth-transition">Contact Us</Link>
@@ -72,11 +72,11 @@ export default function RootLayout({
               <div>
                 <div className="font-bold mb-2 text-lg">Quick Links</div>
                 <ul className="space-y-1">
-                  <li><a href="#therapy" className="hover:underline">Therapy</a></li>
+                  <li><Link href="/therapy" className="hover:underline">Therapy</Link></li>
                   <li><a href="#" className="hover:underline">Blogs & News</a></li>
                   <li><a href="#" className="hover:underline">Publications</a></li>
                   <li><a href="#" className="hover:underline">Executive Management</a></li>
-                  <li><a href="#" className="hover:underline">Disclaimer</a></li>
+                  <li><Link href="/disclaimer" className="hover:underline">Disclaimer</Link></li>
                 </ul>
               </div>
               {/* Hospitals */}

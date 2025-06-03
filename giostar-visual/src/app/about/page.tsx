@@ -177,7 +177,7 @@ export default function About() {
               We are present all across the country; may not be physically but in the
               smiles of millions of lives that we have touched
             </p>
-            <a href="#contact" className="underline font-semibold">
+            <a href="/contact" className="underline font-semibold">
               Contact Us →
             </a>
           </motion.div>

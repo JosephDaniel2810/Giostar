@@ -25,7 +25,7 @@ import {
 interface CountUpProps {
   end: number;
   duration?: number; // in seconds
-  suffix?: string;   // e.g. "+" if you want “4200+”
+  suffix?: string;   // e.g. "+" if you want "4200+"
 }
 function CountUp({ end, duration = 2, suffix = "" }: CountUpProps) {
   const [count, setCount] = useState(0);
@@ -224,7 +224,7 @@ export default function BangaloreCentre() {
               all others in world.
             </p>
             <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">
-              Book Now
+              <a href="/contact">Book Now</a>
             </button>
           </motion.div>
 
@@ -388,7 +388,7 @@ export default function BangaloreCentre() {
           >
             <div className="h-48 w-full relative">
               <Image
-                src="/services/erectile.png" // Replace with your actual image for Erectile Dysfunction
+                src="/services/erectile.jpg" // Replace with your actual image for Erectile Dysfunction
                 alt="Erectile Dysfunction"
                 fill
                 className="object-cover"
@@ -399,7 +399,7 @@ export default function BangaloreCentre() {
                 Erectile Dysfunction
               </h3>
               <p className="text-gray-600 mb-4 text-center">
-                Erectile Dysfunction: Erectile Dysfunction, commonly referred as ‘impotence’, is
+                Erectile Dysfunction: Erectile Dysfunction, commonly referred as 'impotence', is
                 the repeated inability to get or keep an erection.
               </p>
               <div className="flex justify-center">
@@ -418,7 +418,7 @@ export default function BangaloreCentre() {
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="bg-gray-900 text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-shadow"
           >
-            More Services
+            <a href="/therapy">More Services</a>
           </motion.button>
         </div>
       </section>
